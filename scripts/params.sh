@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # executables
-DOCKER=/usr/local/bin/docker
+DOCKER=/usr/bin/docker
 GIT=/usr/local/bin/git
 
 # settings
