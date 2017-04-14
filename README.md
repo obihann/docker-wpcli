@@ -1,7 +1,6 @@
 # Docker WP-CLI
 
-[![](https://images.microbadger.com/badges/image/obihann/wpcli.svg)](https://microbadger.com/images/obihann/wpcli "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/obihann/wpcli.svg)](https://microbadger.com/images/obihann/wpcli "Get your own version badge on microbadger.com")
+[![Build Status](https://travis-ci.org/obihann/docker-wpcli.svg?branch=master)](https://travis-ci.org/obihann/docker-wpcli) [![](https://images.microbadger.com/badges/image/obihann/wpcli.svg)](https://microbadger.com/images/obihann/wpcli "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/obihann/wpcli.svg)](https://microbadger.com/images/obihann/wpcli "Get your own version badge on microbadger.com")
 
 WP-CLI built on top of [Alpine Linux 3.5](https://hub.docker.com/_/alpine/). 
 
