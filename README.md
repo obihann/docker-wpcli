@@ -1,6 +1,6 @@
 # Docker WP-CLI
 
-WP-CLI built on top of Alpine Linux 3.5. 
+WP-CLI built on top of [Alpine Linux 3.5](https://hub.docker.com/_/alpine/). 
 
 ## Alias
 
@@ -14,9 +14,13 @@ You can use this in two ways, first by using the build script (`scripts/run.sh`)
 
 * **Download** 
 
+By default we download everything to your current directory, this can be updated on the params script (see config section below).
+
 `./scripts/run.sh core download`
 
 * **Config** 
+
+Config assumes that your current directory already has Wordpress core downloaded.
 
 ```
 ./scripts/run.sh core config  \
@@ -27,6 +31,8 @@ You can use this in two ways, first by using the build script (`scripts/run.sh`)
 ```
 
 * **Install**
+
+Config assumes that your current directory already has Wordpress core downloaded *AND* configured.
 
 ```
 ./scripts/run.sh core install \
@@ -51,11 +57,15 @@ GIT=/usr/local/bin/git
 # settings
 IMAGE_NAME=wpcli
 VERSION=1.0.0
-HOST_WPPATH="$(pwd)/wp"
+HOST_WPPATH="$(pwd)"
 CONTAINER_WPPATH=/mnt
 ```
 
+## Credits
 
+* [soifou](https://github.com/soifou/)
+
+	[WP-CLI on Alpine Linux](https://github.com/soifou/wpcli-alpine) After I started this I realized their are probably 1000x people who have already done it. Instead of giving up I found this one and stole some great ideas.
 
 ## License
 
