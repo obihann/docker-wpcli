@@ -1,5 +1,9 @@
 FROM alpine:3.5
 
+LABEL description="WP-CLI built on top of Alpine Linux 3.5." \
+    name="wpcli" \
+    version="1.0.0"
+
 RUN apk add --no-cache \
     curl \
     php5-mysql \
