@@ -1,4 +1,4 @@
-#Docker WP-CLI
+# Docker WP-CLI
 
 WP-CLI built on top of Alpine Linux 3.5. 
 
