@@ -1,14 +1,55 @@
 # Docker WP-CLI
 
+[![](https://images.microbadger.com/badges/image/obihann/wpcli.svg)](https://microbadger.com/images/obihann/wpcli "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/obihann/wpcli.svg)](https://microbadger.com/images/obihann/wpcli "Get your own version badge on microbadger.com")
+
 WP-CLI built on top of [Alpine Linux 3.5](https://hub.docker.com/_/alpine/). 
 
 ## Alias
 
-* 1.0.0, latest [(Dockerfile)](Dockerfile)
+* 1.0.0, latest [(Dockerfile)](https://github.com/obihann/docker-wpcli/blob/master/Dockerfile)
 
 ## Running
 
 You can use this in two ways, first by using the build script (`scripts/run.sh`) and the other is the traditional way with the Docker run command.
+
+### Docker examples
+
+* **Download** 
+
+```
+docker run --rm \
+	-v $(pwd):/mnt \
+	obihann/wpcli:1.0.0 \
+	core download
+```
+
+* **Config** 
+
+```
+docker run --rm \
+	-v $(pwd):/mnt \
+	obihann/wpcli:1.0.0 \
+	core config  \
+	--dbhost=db \
+	--dbname=wptest \
+	--dbuser=root \
+	--dbpass=root
+```
+
+* **Install** 
+
+```
+docker run --rm \
+	-v $(pwd):/mnt \
+	obihann/wpcli:1.0.0 \
+	core install \
+    --url=http://wp-test \
+    --title="Awesome website" \
+    --admin_user=admin \
+    --admin_password=admin \
+    --admin_email admin@admin.com
+```
 
 ### Script Examples
 
