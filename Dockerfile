@@ -26,6 +26,6 @@ RUN apk add --no-cache \
     rm -rf /var/cache/apk/*
 
 VOLUME ["/mnt"]
-
+WORKDIR "/mnt/"
 ENTRYPOINT ["/usr/bin/wp", "--path=/mnt"]
 CMD ["--info"]
